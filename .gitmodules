@@ -40,3 +40,6 @@
 [submodule "bundle/the-nerd-tree-git-plugin"]
 	path = bundle/the-nerd-tree-git-plugin
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "bundle/vim-autoclose"]
+	path = bundle/vim-autoclose
+	url = https://github.com/vim-scripts/AutoClose.git
