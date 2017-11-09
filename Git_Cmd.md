@@ -1,7 +1,9 @@
 ### Create a submodule repo from a folder and keep its git commit history
 
 #### Detailed solution is the link above.
+```
 https://stackoverflow.com/questions/17413493/create-a-submodule-repository-from-a-folder-and-keep-its-git-commit-history
+```
 
 #### Another simple way
 The solution by @GabLeRoux squashes the branches, and the related commits.
