@@ -21,7 +21,7 @@ git submodule foreach --recursive git submodule update --init
 The result is same but just the 2nd one will step into each directory.
 
 
-
+# .vimrc
 ### In .vimrc, add the following codes to implement press TAB to get 4 white spaces
 ```
 set ts=4  " ts is tabstop, which is to set the width ofTAB as 4
