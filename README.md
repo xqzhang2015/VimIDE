@@ -30,13 +30,17 @@ set expandtab
 
 ### For the saved files, we could use the following approach to exchange between white space and TAB:
 #### TAB to white space
+```
 :set ts=4
 :set expandtab
 :%retab!
- 
+```
+
 #### white space to TAB
+```
 :set ts=4
 :set noexpandtab
 :%retab! 
 " ! is to handle all TAB;
 " NO !, only handle TAB of line header
+```
