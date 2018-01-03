@@ -36,6 +36,7 @@ export PATH=/usr/local/bin:$PATH
 ```
 or `alias vim='/usr/local/bin/vim'`
 注意 这里的--with-python-config-dir=/usr/lib/python2.7/config 等号后的路径每个机子不一定相同，总之需要找到 config 这个文件
+
 2. ycm install
 ```
 cd ~/.vim/bundle/YouCompleteMe
