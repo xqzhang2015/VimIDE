@@ -34,10 +34,13 @@ map <C-t> :TagbarToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:TagbarType") && b:TagbarType == "primary") | q | endif
 
 " YouCompleteMe
-let g:ycm_global_ycm_extra_conf='~/.vim/bundle/vim-YouCompleteMe/third_party/ycmd/cpp/.ycm_extra_conf.py'
+" "let g:ycm_global_ycm_extra_conf='~/.vim/bundle/vim-YouCompleteMe/third_party/ycmd/cpp/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf='~/VimIDE/bundle/vim-YouCompleteMe/third_party/ycmd/cpp/.ycm_extra_conf.py'
 let g:ycm_disable_for_files_larger_than_kb=1517475
 
 " ctags
+" generate ctags file
+map <F5> :!ctags -R --languages=c++ --langmap=c++:+.inl -h +.inl --c++-kinds=+px --fields=+iaS --extra=+q .<CR><CR> :TagbarToggle<CR>
 set tags=tags;
 set autochdir
 
