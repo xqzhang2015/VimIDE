@@ -21,6 +21,29 @@ git submodule foreach --recursive git submodule update --init
 The result is same but just the 2nd one will step into each directory.
 
 
+For youcompleteme plugin
+1. install vim 8.0
+```
+yum install ncurses-devel
+wget https://github.com/vim/vim/archive/master.zip
+unzip master.zip
+cd vim-master
+cd src/
+./configure --with-features=huge -enable-pythoninterp --with-python-config-dir=/usr/bin/python2.7-config
+sudo make
+sudo make install
+export PATH=/usr/local/bin:$PATH
+```
+or `alias vim='/usr/local/bin/vim'`
+注意 这里的--with-python-config-dir=/usr/lib/python2.7/config 等号后的路径每个机子不一定相同，总之需要找到 config 这个文件
+2. ycm install
+```
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --clang-completer --gocode-completer
+```
+
+
+
 # .vimrc
 ### In .vimrc, add the following codes to implement press TAB to get 4 white spaces
 ```
