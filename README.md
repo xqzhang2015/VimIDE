@@ -1,5 +1,16 @@
 # VimIDE
 
+## Issues
+If you encounter ctags issue on Mac, please reinstall ctags by brew:
+```
+brew install ctags
+```
+
+Then add ctags alias to ~/.bashrc or ~/.zshrc and source shell, like this
+```
+alias ctags="/usr/local/Cellar/ctags/5.8_1/bin/ctags"
+```
+
 ## Add submodule
 ```
 git submodule add https://github.com/vim-scripts/The-NERD-tree.git bundle/the-nerd-tree
@@ -67,4 +78,9 @@ set expandtab
 :%retab! 
 " ! is to handle all TAB;
 " NO !, only handle TAB of line header
+```
+
+```
+git config user.name "ShawnZHANG""
+git config user.email "xqzhang2015@gmail.com"
 ```
