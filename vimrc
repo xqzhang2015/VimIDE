@@ -34,8 +34,7 @@ map <C-t> :TagbarToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:TagbarType") && b:TagbarType == "primary") | q | endif
 
 " YouCompleteMe
-" "let g:ycm_global_ycm_extra_conf='~/.vim/bundle/vim-YouCompleteMe/third_party/ycmd/cpp/.ycm_extra_conf.py'
-let g:ycm_global_ycm_extra_conf='~/VimIDE/bundle/vim-YouCompleteMe/third_party/ycmd/cpp/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf='~/.vim/bundle/vim-YouCompleteMe/third_party/ycmd/cpp/.ycm_extra_conf.py'
 let g:ycm_disable_for_files_larger_than_kb=1517475
 
 " ctags
@@ -56,4 +55,7 @@ set softtabstop=4
 
 set list " show Tab
 set listchars=tab:\|\ , " use | to replace Tab
+
+" C++ 11 syntax checking
+let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libc++'
 
